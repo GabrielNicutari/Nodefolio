@@ -2,24 +2,35 @@ const router = require("express").Router();
 
 const projects = [
     {
-        title: "Nodefolio",
+        title: "Nordic Motorhome Rental",
         description: "Created a personal portfolio with Node.js",
-        gitURL: ["https://github.com/anderslatif/Kea_DAT_Node_2021_SPRING.git/1/5._Nodefolio"],
-        images: [],
+        code: ["https://github.com/GabrielNicutari/Nordic-Motorhome-Rental"],
+        published: "https://spring-web-server.herokuapp.com",
+        image: "../assets/nmh.png",
         technologiesInvoled: ["Node.js", "Html", "CSS"]
     },
     {
         title: "We Bring | You Cook",
         description: "Ingredient delivery & recipe book platform",
-        gitURL: ["https://github.com/GabrielNicutari/WBYC_Web-Client","https://github.com/CristianOu/WBYC_Web-Server"],
-        images: [],
+        code: ["https://github.com/GabrielNicutari/WBYC_Web-Client","https://github.com/CristianOu/WBYC_Web-Server"],
+        published: "https://wbyc-web-client.herokuapp.com",
+        image: "../assets/wbyc-page.png",
         technologiesInvoled: ["Node.js", "Html", "CSS"]
     },
     {
         title: "Next Level",
         description: "Game Store",
-        gitURL: ["https://github.com/GabrielNicutari/WBYC_Web-Client","https://github.com/CristianOu/WBYC_Web-Server"],
-        images: [],
+        code: ["https://github.com/GabrielNicutari/NextLevel_Web-Client","https://github.com/GabrielNicutari/NextLevel_Web-Server"],
+        published: "https://next-level-web-client.herokuapp.com/",
+        image: "../assets/next-level2.png",
+        technologiesInvoled: ["Node.js", "Html", "CSS"]
+    },
+    {
+        title: "A Malicious Story",
+        description: "Game",
+        code: [],
+        published: "https://www.youtube.com/watch?v=bwvLglQhMXU&t=17s",
+        image: "",
         technologiesInvoled: ["Node.js", "Html", "CSS"]
     }
     

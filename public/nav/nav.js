@@ -7,3 +7,8 @@ $('#links a').each(function() {
         $(this).addClass('active');
     }
 });
+
+
+if(window.location.pathname == '/') {
+    $('body').css('overflow', 'hidden');
+}

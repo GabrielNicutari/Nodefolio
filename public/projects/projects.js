@@ -7,23 +7,19 @@
     const projectsDiv = document.getElementById("projects");
 
     result.projects.map((project, index) => {
-        // const projectDiv = document.createElement("div");
-        // projectDiv.classList.add("project-card");
 
-        // const projectTitle = document.createElement("h2");
-        // projectTitle.classList.add("project-title");
-        // projectTitle.innerText = project.title;
+        if(project.code.length === 0) {
+            let card = $('#' + index);
+            $('#3').remove();
+        } else {
+            $('#3').remove();
+            console.log("sth");
+        }
 
-        // const projectDescription = document.createElement("p");
-        // projectDescription.classList.add("project-description");
-        // projectDescription.innerText = project.description;
-
-        // projectDiv.appendChild(projectTitle);
-        // projectDiv.appendChild(projectDescription);
-        // projectsDiv.appendChild(projectDiv);
+        
 
         let output = `
-            <div id="${index}" class="project-card">
+            <div id="${index}" class="project-card" style="background-image: url('${project.image}')">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -31,7 +27,8 @@
                 <div class="content">
                     <h2 class="project-title">${project.title}</h2>
                     <p class="project-description">${project.description}</p>
-                    <a class="project-links" href=""></a>
+                    <a class="button code" href="${project.code[0]}" target="_blank">Code</a>
+                    <a class="button deployed" href="${project.published}" target="_blank">Website</a> 
                 </div>
             </div>
         `;

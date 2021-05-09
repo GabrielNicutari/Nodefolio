@@ -21,15 +21,15 @@
 .background .row div{
     font-size: 1em;
     white-space: nowrap;
-    animation: animate 80s linear infinite;
+    animation: animateA 80s linear infinite;
     animation-delay: -90s;
 }
 
 .background .row div:nth-child(2){
-    animation: animate2 80s linear infinite;
+    animation: animateB 80s linear infinite;
     animation-delay: -50s;
 }
-@keyframes animate {
+@keyframes animateA {
     0% {
         transform: translateX(100%);
     }
@@ -38,7 +38,7 @@
     }
 }
 
-@keyframes animate2 {
+@keyframes animateB {
     0% {
         transform: translateX(0%);
     }
@@ -50,15 +50,15 @@
 .background .row:nth-child(even) div{
     font-size: 1em;
     white-space: nowrap;
-    animation: animate3 80s linear infinite;
+    animation: animateC 80s linear infinite;
     animation-delay: -80s;
 }
 
 .background .row:nth-child(even) div:nth-child(2){
-    animation: animate4 80s linear infinite;
+    animation: animateD 80s linear infinite;
     animation-delay: -40s;
 }
-@keyframes animate3 {
+@keyframes animateC {
     0% {
         transform: translateX(-100%);
     }
@@ -67,7 +67,7 @@
     }
 }
 
-@keyframes animate4 {
+@keyframes animateD {
     0% {
         transform: translateX(-200%);
     }

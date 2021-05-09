@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #1d1d1d;
+    color: #fff;
+    display: block;
+    overflow: hidden;
+}
+
+:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}

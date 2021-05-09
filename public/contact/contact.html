@@ -1,0 +1,46 @@
+<div class="contact-page">
+    
+    <div id="contact-info">
+        <h1>Contact Me</h1>
+        
+        <p>Telephone</p>
+        <p>Email</p>
+    </div>
+    
+    <form method="POST" action="/api/contact" id="contact-form">
+        <ul>
+            <li class="input">
+                <input type="text" name="name" placeholder="" class="input-field">
+                <label class="label">Name</label>
+                <span class="focus-border"></span>
+            </li>
+    
+            <li class="input">
+                <input type="email" name="email" placeholder="" class="input-field" required>
+                <label class="label">Email</label>
+                <span class="focus-border"></span>
+            </li>
+    
+            <li class="input">
+                <input type="subject" name="subject" placeholder="" class="input-field">
+                <label class="label">Subject</label>
+                <span class="focus-border"></span>
+            </li>
+    
+            <li class="input">
+                <textarea type="text" name="message" placeholder="" rows="20" cols="50" class="input-field" required></textarea>
+                <label class="label">Message</label>
+                <span class="focus-border"></span>
+            </li>
+        </ul>
+    
+        <button id="submit-button" type="submit">
+            <span class="background"></span>
+            <span class="border"></span>
+            <span class="text">Send Message</span>
+        </button>
+    </form>
+</div>
+
+<script src="../contact/contact.js"></script>
+

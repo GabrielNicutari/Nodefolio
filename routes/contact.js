@@ -1,12 +1,13 @@
+require('dotenv').config();
 const router = require("express").Router();
 const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
 const OAuth2 = google.auth.OAuth2;
 
-const CLIENT_ID = '843391995196-8gfj66lfsnbp2i37gb59grbvft810uho.apps.googleusercontent.com';
-const CLIENT_SECRET = 'rA2j40C4D0Qg25pO3tzMrkn5';
+const CLIENT_ID = process.env.CLIENT_ID;
+const CLIENT_SECRET = process.env.CLIENT_SECRET;
 const REDIRECT_URI = 'https://developers.google.com/oauthplayground';
-const REFRESH_TOKEN = '1//04iHT379tNkk6CgYIARAAGAQSNgF-L9IrkTJeTKcRHyEyuNhvDC5sscbVn6ipKYEx45l5IsoKptzkk84fj-irIV0u4OHJ2Y-SbA';
+const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
 
 const oAuth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
 

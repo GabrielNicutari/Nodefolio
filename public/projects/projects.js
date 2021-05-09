@@ -8,16 +8,6 @@
 
     result.projects.map((project, index) => {
 
-        if(project.code.length === 0) {
-            let card = $('#' + index);
-            $('#3').remove();
-        } else {
-            $('#3').remove();
-            console.log("sth");
-        }
-
-        
-
         let output = `
             <div id="${index}" class="project-card" style="background-image: url('${project.image}')">
                 <span></span>
@@ -33,6 +23,13 @@
             </div>
         `;
         projectsDiv.innerHTML += output;
+
+        if(project.code.length === 0) {
+            let card = $('#' + index);
+
+            $('#' + index +' .content .button.code').remove();
+            $('#' + index +' .content .button.deployed').text('Video');
+        }
     });
 })();
 

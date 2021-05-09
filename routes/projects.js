@@ -14,6 +14,13 @@ const projects = [
         gitURL: ["https://github.com/GabrielNicutari/WBYC_Web-Client","https://github.com/CristianOu/WBYC_Web-Server"],
         images: [],
         technologiesInvoled: ["Node.js", "Html", "CSS"]
+    },
+    {
+        title: "Next Level",
+        description: "Game Store",
+        gitURL: ["https://github.com/GabrielNicutari/WBYC_Web-Client","https://github.com/CristianOu/WBYC_Web-Server"],
+        images: [],
+        technologiesInvoled: ["Node.js", "Html", "CSS"]
     }
     
 ];

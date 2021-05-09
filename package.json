@@ -1,0 +1,24 @@
+{
+  "name": "nodefolio",
+  "version": "0.0.1",
+  "description": "Mandatory Assignment for NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env PORT=3000 nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "node"
+  ],
+  "author": "Gabriel Nicutari",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "googleapis": "^73.0.0",
+    "nodemailer": "^6.6.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
